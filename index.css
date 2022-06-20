@@ -1,0 +1,89 @@
+body {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  grid-template-rows: 0.2fr 2fr 1fr;
+  justify-content: center;
+  height: 100vw;
+  width: 100%;
+  background-color: rgba(187, 48, 76, 0.582);
+}
+
+#main-container {
+  width:100%;
+  height: 100%;
+  grid-column-start: 2;
+  grid-column-end: -3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  text-align: center;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(107, 107, 168, 0.486);
+  color:aliceblue;
+  width: 100%;
+  height: 10%;
+  text-align: center;
+}
+
+button {
+  display: inline-block;
+  width: 250px;
+  height: 250px;
+  font-family: 'Anonymous Pro', monospace;
+  font-family: 'Pacifico', cursive;
+  font-size: 45px;
+  margin: 0 20px 20px 20px;
+}
+
+#one-player.clicked {
+  pointer-events: none;
+  background-color: grey;
+  color:rgb(190, 6, 6);
+  font-weight: bold;
+}
+
+#two-players.clicked {
+  pointer-events: none;
+  background-color: grey;
+  color: rgb(190, 6, 6);
+  font-weight: bold;
+}
+
+#one-player {
+  background-color: rgba(173, 206, 25, 0.89);
+  color: black;
+}
+
+#two-players {
+  color: rgb(100, 78, 48);
+}
+
+input {
+  width: 90%;
+  height: 8%;
+  margin: auto;
+  font-family: 'Anonymous Pro', monospace;
+  font-family: 'Pacifico', cursive;
+  font-size: 30px;
+  text-align: center;
+  background-color: rgba(162, 206, 198, 0.726);
+}
+
+::placeholder{
+  color: darkred;
+  text-decoration: solid;
+}  
+
+#human-input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  height: 8%;
+  margin: auto;
+  visibility: hidden;
+}
