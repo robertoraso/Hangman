@@ -50,11 +50,11 @@ function showInput() {
 
   function rightLetter(letter) {
     const lettersOfWord = lettersMisteryWord.join('');
-    if (document.querySelector('.correctLetters')) {
-      document.querySelector('.correctLetters').textContent = lettersOfWord;
+    if (document.querySelector('.correct-letters')) {
+      document.querySelector('.correct-letters').textContent = lettersOfWord;
     } else {
       let correctLetter = document.createElement('div'); 
-        correctLetter.setAttribute('class', 'correctLetters');
+        correctLetter.setAttribute('class', 'correct-letters');
         correctLetter.textContent = letter;
         main.appendChild(correctLetter);
       };
@@ -83,7 +83,7 @@ function victoryMessage() {
   victoryAnnouncement.textContent = 'Player 1 won!';
   main.appendChild(victoryAnnouncement);
   console.log(victoryAnnouncement);
-  setTimeout(()=> main.removeChild(victoryAnnouncement), 2500);
+  setTimeout(()=> main.removeChild(victoryAnnouncement), 4500);
 }
 
 onePlayer.addEventListener('click', fetchedWord);
